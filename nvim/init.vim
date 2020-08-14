@@ -2,6 +2,7 @@ syntax on
 
 set guicursor=
 set relativenumber
+set autowriteall
 set mouse=a
 set backspace=indent,eol,start
 set nohlsearch
@@ -67,6 +68,9 @@ set background=dark
 if executable('rg')
     let g:rg_derive_root='true'
 endif
+
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
 
 let loaded_matchparen = 1
 let mapleader = " "
